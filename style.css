@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+  }
+.nav-border {
+    border: 1px solid #c5b3d4; /* Adjust the color to match your design */
+    background-color: #f8f8f8; /* Background color of the navbar */
+    width: 100%; /* Full width */
+    border-radius: 10px; 
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.navbar {
+    background-color: #c5b3d4; /* Purple background color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  
+}
+
+.nav-item {
+    display: block;
+    padding: 10px 20px;
+    background-color: #c5b3d4; /* Or any default color */
+    color: white; /* Text color */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-item:hover {
+    background-color: rgb(243, 242, 180); /* Color on hover */
+    color: rgb(21, 20, 20); /* Text color on hover */
+  }
+
+
+.nav-icon {
+    width: 24px; /* Set your icon size */
+    height: 24px;
+    margin-right: 8px;
+}
+
+.about-me-container {
+  margin-top:10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #d1b4ea; /* Dark border color */
+    border-radius: 10px; /* Rounded corners for the container */
+    margin-bottom:20px;
+    background-color: #c5b3d4;
+  }
+  
+  .about-me-heading {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8; /* Light background color for the content area */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me-image {
+    flex: start;
+    margin-right: 70px;
+    width :50%
+  }
+  
+  .about-me-image img {
+    width: 250px; /* You can adjust this as needed */
+    height: 250px;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-top: 20px;
+    margin-bottom:20px;
+  }
+  
+  .about-me-text {
+    flex: end;
+    text-align: left;
+    width:50%;
+    font-size: 16px;
+  }
+  
+  .about-me-text h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+
+  
+  .about-me-text p {
+    font-size: 16px;
+    color: #666; /* Gray text color for the description */
+    line-height: 1.6;
+  }
+  
+.education-section {
+    border-radius: 20px;
+    color: #666;
+    background-color: #c5b3d4;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; /* Rounded corners for the container */
+    margin-bottom:20px;
+    
+  }
+  .education-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+  .education-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .education-block {
+    width: 46%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+  }
+  .education-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  .education-date {
+    text-align: right;
+    font-style: italic;
+    color: #666;
+  }
+  .education-degree, .education-cgpa, .education-courses {
+    margin: 10px 0;
+  }
+  .projects-section {
+    color: #666;
+    background-color: #c5b3d4;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; /* Rounded corners for the container */
+  }
+  
+  .projects-title {
+    text-align: left;
+    color: #333;
+    font-size: 1.3em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: flex-start; /* Aligns items to the top of the container */
+  }
+
+
+  .project-card {
+    display: flex;
+    width:40%;
+    flex-direction: column;
+    align-items: center; /* This will center the content horizontally */
+    margin-bottom: 20px; 
+    flex: 0 0 45%; /* Each card will take up 48% of the container width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+     align-items: center; 
+   
+    /* Other styles remain unchanged */
+  }
+
+  p
+  .project-image {
+  
+        width: 100%; /* Full width of the card */
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+        margin-bottom: 20px;
+       
+
+  }
+  .project-card img {
+    max-width: 100%; /* Image will not exceed its container */
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+    margin-bottom: 20px;
+  }
+  .project-card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    color: #666;
+  }
+  .experience-section {
+    color: #666;
+    margin: auto;
+    background-color: #c5b3d4;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Box shadow for depth */
+  }
+  
+  .experience-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px; 
+  }
+  
+  .experience-entry {
+    border-top: 2px solid #ccc; /* Separator line */
+    padding-top: 20px; /* Space above the entry */
+
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between; /* Positions the company name and date range on opposite ends */
+    align-items: baseline; /* Aligns items along the baseline */
+    margin-bottom: 10px; /* Space below the header */
+  }
+  .role{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #333;
+  }
+  .date-range{
+    color:#333;
+  }
+ 
+  
+  .company-name {
+    font-weight: bold;
+    color: #333;
+  }  
+  .blog-container {
+    color: #666;
+    background-color: #fff;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; /* Rounded corners for the container */
+    padding: 20px; /* Padding inside the container */
+    margin-bottom: 20px;
+  }
+  
+  .blog-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+
+.blog-container h1, .blog-container h2 {
+    color: #5D5C61;
+}
+
+.blog-container ul {
+    list-style: inside square;
+    padding-left: 20px;
+}
+
+.blog-container li {
+    margin-bottom: 10px;
+}
+
+.blog-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+  .contact-container {
+    color: #666;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; /* Rounded corners for the container */
+    background-color: #c5b3d4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Padding inside the container */
+    border-radius: 4px; /* Rounded corners */
+  }
+ 
+  
+  .contact-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+  .contact-info p {
+    margin: 0; /* Remove default margin from paragraphs */
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Adjust font size as necessary */
+  }
+  
+ 
+  
+  .social-icon img {
+    width: 30px; /* Width of the icons */
+    height: 30px; /* Height of the icons */
+    /* Other styling as needed */
+  }
+  
+/* Responsive style for smaller screens */
+
+    @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+        }
+    
+        .content {
+          padding: 15px;
+        }
+    
+}
+
