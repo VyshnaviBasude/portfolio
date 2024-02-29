@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+  }
+.nav-border {
+    border: 1px solid #c5b3d4; 
+    background-color: #f8f8f8;
+    width: 100%;
+    border-radius: 10px; 
+    box-sizing: border-box;
+}
+.navbar {
+  height:30px;
+    background-color: #c5b3d4; 
+    /* color: white; */  
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    width: 100%;
+}
+.logo{
+  float:left;
+  color: white;
+}
+.nav-menu {
+   float:right;
+    text-align:center;
+    list-style-type: none;
+}
+.nav-item {
+  list-style-type: none;
+    float:left;
+    padding: 10px 20px;
+    margin-right:-4px;
+    /* background-color: #c5b3d4;  */
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .nav-item a {
+       color:#333
+  }
+  
+  .nav-item:hover {
+    background-color: rgb(243, 242, 180) !important; 
+  }
+
+.about-me-container {
+  margin-top:10px;
+  height:420px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #d1b4ea; 
+    border-radius: 10px; 
+    margin-bottom:20px;
+    position:relative;
+    background-color: #c5b3d4;
+  }
+  
+  .about-me-heading {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    position:absolute;
+    top:1px;
+    padding-left: 18px;
+    margin-top:10px;
+    
+  }
+  
+  .about-me-content {
+    margin-top:40px;
+    height:350px;;
+    background-color: #f8f8f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me-image {
+    margin-right: 50px;
+    width :40%
+  }
+  
+  .about-me-image img {
+    width: 275px; 
+    height: 275px;
+    border-radius: 10px; 
+    margin-top: 40px;
+    margin-bottom:20px;
+  }
+  
+  .about-me-text {
+    float:right;
+    position: relative;
+    right:100px;
+    bottom: 300px;
+    text-align: left;
+    margin-bottom: 50px;
+    width:55%;
+    font-size: 16px;
+  }
+  .about-me-text h4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .about-me-text p {
+   
+    font-size: 16px;
+    color: #666; 
+    line-height: 1.6;
+  }
+  
+.education-section {
+    min-height:300px;
+    border-radius: 20px;
+    color: #666;
+    background-color: #c5b3d4;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d1b4ea;
+    margin-bottom:20px;
+    
+  }
+  .education-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+  .education-content {   
+    float:left;
+    position:relative;
+    bottom:175px;
+  }
+  .education-block {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    background: #f9f9f9;
+    float:left;  
+    min-height:200px;
+    margin-right:90px;
+    
+  }
+  .education-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  .education-date {
+    text-align: right;
+    font-style: italic;
+    color: #666;
+  }
+  .education-degree, .education-cgpa, .education-courses {
+    margin: 10px 0;
+  }
+  .projects-section {
+    min-height:500px;
+    color: #666;
+    background-color: #c5b3d4;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; 
+    position: relative;
+  }
+  
+  .projects-title {
+    color: #333;
+    font-size: 1.5em;
+    height:30px;
+    position:absolute;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .projects-grid {
+    position: absolute;
+    top:70px;
+    float:left;
+    min-height:200px;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+  }
+
+
+  .project-card {
+    float:left;  
+    width:40%;
+    min-height:400px;
+    margin-right:80px;
+    margin-bottom: 20px; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-image {
+        width: 70%; 
+        text-align:center;
+        margin-left:60px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+       
+
+  }
+  /* .project-card img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+  } */
+  .project-card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    color: #666;
+  }
+  .experience-section {
+    color: #666;
+    margin: auto;
+    background-color: #c5b3d4;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  }
+  
+  .experience-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px; 
+  }
+  
+  .experience-entry {
+    border-top: 2px solid #ccc; 
+    padding-top: 20px; 
+
+  }
+  
+  .experience-header {
+    justify-content: space-between; 
+    align-items: baseline; 
+    margin-bottom: 10px; 
+  }
+  .role{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #333;
+  }
+  .date-range{
+    color:#333;
+  }
+ 
+  
+  .company-name {
+    font-weight: bold;
+    color: #333;
+  }  
+  .blog-container {
+    color: #666;
+    background-color: #fff;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px;
+  }
+  
+  .blog-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+
+.blog-container h1, .blog-container h2 {
+    color: #5D5C61;
+}
+
+.blog-container ul {
+    list-style: inside square;
+    padding-left: 20px;
+}
+
+.blog-container li {
+    margin-bottom: 10px;
+}
+
+.blog-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+  .contact-container {
+    color: #666;
+    border: 2px solid #d1b4ea;
+    border-radius: 10px;
+    background-color: #c5b3d4;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+  }
+ 
+  
+  .contact-title {
+    color: #333;
+    font-size: 1.5em;
+    border-left: 4px solid #8a2be2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+  .contact-info p {
+    margin: 0; 
+    color: #333; 
+    font-size: 16px; 
+  }
+  
+  .social-icon img {
+    float:right;
+    position: relative;
+    right:100px;
+    bottom: 60px;
+    width: 50px; 
+    height: 50px;
+    margin-left: 10px; 
+  }
+  
+/* Responsive style for smaller screens */
+
+@media only screen and (max-width: 900px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+   
+}
+    
+
+
