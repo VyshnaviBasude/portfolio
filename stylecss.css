@@ -48,6 +48,20 @@ body {
   .nav-item:hover {
     background-color: rgb(243, 242, 180) !important; 
   }
+  @media (max-width: 500px) {
+    .nav-border {
+        grid-template-columns: 1fr; /* Stack logo and nav-menu vertically */
+    }
+
+    .nav-menu {
+        grid-auto-flow: row; /* Stack nav items vertically */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .nav-item {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+}
 
 .about-me-container {
   margin-top:10px;
@@ -189,9 +203,7 @@ body {
     top:70px;
     float:left;
     min-height:200px;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    align-items: flex-start; 
+   
   }
 
 
@@ -258,8 +270,6 @@ body {
   }
   
   .experience-header {
-    justify-content: space-between; 
-    align-items: baseline; 
     margin-bottom: 10px; 
   }
   .role{
@@ -317,8 +327,6 @@ body {
     border: 2px solid #d1b4ea;
     border-radius: 10px;
     background-color: #c5b3d4;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     border-radius: 4px;
   }
