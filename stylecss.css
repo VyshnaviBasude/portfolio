@@ -50,16 +50,16 @@ body {
   }
   @media (max-width: 500px) {
     .nav-border {
-        grid-template-columns: 1fr; /* Stack logo and nav-menu vertically */
+        grid-template-columns: 1fr; 
     }
 
     .nav-menu {
-        grid-auto-flow: row; /* Stack nav items vertically */
-        justify-content: center; /* Center items horizontally */
+        grid-auto-flow: row; 
+        justify-content: center; 
     }
 
     .nav-item {
-        padding: 5px 10px; /* Adjust padding for smaller screens */
+        padding: 5px 10px; 
     }
 }
 
